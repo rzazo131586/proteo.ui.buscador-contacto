@@ -5,12 +5,13 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 		$scope.filter = {};
 		$scope.contactsFiltered = [];
 
-		$http.get('http://localhost:3000/users').
-        success(function(data) {
+		// Init JSON-SERVER for consume REST Service JSON
+		$http.get('http://localhost:3000/users').success(function(data) {
             $scope.contacts = data;
             $scope.contactsFiltered = data;
         });
         
+        // Reset INPUTS & LIST constacts ( future : service )
         $scope.contactReset = function(){
         	// reasign data into contactsFiltered for reset list contacts
 			$scope.contactsFiltered = $scope.contacts;
@@ -22,8 +23,8 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 			}
         }
 
+        // Validate if Inputs are empty && search into result service compare with filter
         $scope.contactFiltered = function (){
-        	console.log("Clicked");
         	$scope.contactsFiltered = [];
 
         	for(var i = 0; i < $scope.contacts.length ; i++)
@@ -35,17 +36,14 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 				}else{
 					// validate its username like to name
 					if( $scope.contacts[i].username.indexOf($scope.filter.name) != -1){
-						console.log(i+" "+$scope.contacts[i].name);
 						$scope.contactsFiltered.push($scope.contacts[i]);
 					}else{
 						// validate if name lide to lastname
 						if( $scope.contacts[i].name.indexOf($scope.filter.lastname) != -1){
-							console.log(i+" "+$scope.contacts[i].name);
 							$scope.contactsFiltered.push($scope.contacts[i]);
 						}else{
 							// validate if company like corporate
 							if( $scope.contacts[i].company.name.indexOf($scope.filter.corporate) != -1){
-								console.log(i+" "+$scope.contacts[i].name);
 								$scope.contactsFiltered.push($scope.contacts[i]);
 							}
 						}
@@ -53,7 +51,6 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 				}
        	 	};
  		}
-
 })
 .directive("buscadorContacto", function() {
 
