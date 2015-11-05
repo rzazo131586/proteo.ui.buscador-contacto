@@ -29,7 +29,7 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 
         	for(var i = 0; i < $scope.contacts.length ; i++)
 			{	
-				if ($scope.filter.nickname == undefined && $scope.filter.name == undefined && $scope.filter.company == undefined){
+				if ($scope.filter.username == undefined && $scope.filter.name == undefined && $scope.filter.company == undefined){
 					// no data in any input 
 					$scope.contactsFiltered = $scope.contacts;
 					return;
