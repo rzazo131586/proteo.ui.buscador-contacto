@@ -1,3 +1,4 @@
+/* Todo Module */
 angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotCtrl",  function($scope) {
 
 		console.log("Controller buscadorContacto");
@@ -13,3 +14,4 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 	}
 
 });
+/* Todo Filter */

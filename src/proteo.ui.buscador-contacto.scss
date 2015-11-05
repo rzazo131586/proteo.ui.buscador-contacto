@@ -4,19 +4,3 @@
 //Add a new class to identify the component and add it to the component in the html code in [viewname].html.
 
 //Important! If you are not using this stylesheet, consider a good practice deleting it.
-
-.input {
-	color : olive;
-}
-
-.filter-form {
-    width: 100%;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-
-    button{
-    	margin-top : 1em;
-    }
-}
