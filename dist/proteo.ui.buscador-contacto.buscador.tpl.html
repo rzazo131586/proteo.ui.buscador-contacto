@@ -1,16 +1,23 @@
 <div class="buscador-personas-container">
 	<h4>Buscador de Contactos</h4>
-	<div id="filterContact" class="filter-form">
-		<label>NickName</label>
-        <input type="text" name="username" ng-model="filter.username" required>
-		<label>Name Lastname</label>
-        <input type="text" name="name" ng-model="filter.name" required>
-		<label>Company</label>
-        <input type="text" name="company" ng-model="filter.company" required>
-        <div>
-			<button type="button" class="btn btn-action" ng-click="contactFiltered()">Test</button>
-			<button type="button" class="btn btn-action" ng-click="contactReset()">Reset</button>
-        </div>
+	<div id="filterContact" class="form-group">
+		<div class="col-md-6">
+			<label class="control-label ng-scope">NickName</label>
+	        <input class="form-control ng-pristine ng-untouched ng-valid ng-scope" type="text" name="username" ng-model="filter.username">			
+		</div>
 
+		<div class="col-md-6">
+			<label class="control-label ng-scope">Name Lastname</label>
+	        <input class="form-control ng-pristine ng-untouched ng-valid ng-scope" type="text" name="name" ng-model="filter.name" required>
+		</div>
+		<div class="col-md-6">
+			<label class="control-label ng-scope">Company</label>
+	        <input class="form-control ng-pristine ng-untouched ng-valid ng-scope" type="text" name="company" ng-model="filter.company" required>
+		</div>
+		<hr>
+		<div class="col-md-6 text-right">
+			<button type="button" class="btn btn-action" ng-click="contactFiltered()">Buscar</button>
+			<button type="button" class="btn btn-action" ng-click="contactReset()">Reset</button>
+		</div>
 	</div>
 </div>
