@@ -15,7 +15,7 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 	return {
 		restrict: "AE",
 		controller : 'buscadorContactotCtrl',
-		templateUrl: './bower_components/proteo.ui.buscador-contacto/dist/proteo.ui.buscador-contacto.tpl.html'
+		templateUrl: './bower_components/proteo.ui.buscador-contacto/dist/proteo.ui.buscador-contacto.buscador.tpl.html'
 	}
 
 })
@@ -25,7 +25,7 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 	return {
 		restrict: "AE",
 		controller : 'buscadorContactotCtrl',
-		templateUrl: './bower_components/proteo.ui.buscador-contacto/dist/proteo.ui.buscador-contacto.tpl.html'
+		templateUrl: './bower_components/proteo.ui.buscador-contacto/dist/proteo.ui.buscador-contacto.listado.tpl.html'
 	}
 
 });
