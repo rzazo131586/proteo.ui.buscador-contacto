@@ -13,8 +13,14 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
         });
         
         $scope.contactReset = function(){
+        	// reasign data into contactsFiltered for reset list contacts
 			$scope.contactsFiltered = $scope.contacts;
-			document.getElementsByName('name').text = "";
+			// clean inputs by ngModel Filter
+			$scope.filter = {
+				'name' : '',
+				'lastname' : '',
+				'corporate' : ''
+			}
         }
 
         $scope.contactFiltered = function (){
