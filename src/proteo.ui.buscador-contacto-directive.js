@@ -35,7 +35,7 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 					return;
 				}else{
 					// validate its username like to name
-					if( $scope.contacts[i].username.indexOf($scope.filter.nickname) != -1){
+					if( $scope.contacts[i].username.indexOf($scope.filter.username) != -1){
 						$scope.contactsFiltered.push($scope.contacts[i]);
 					}else{
 						// validate if name lide to lastname
