@@ -18,8 +18,8 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 			$scope.contactsFiltered = $scope.contacts;
 			// clean inputs by ngModel Filter
 			$scope.filter = {
+				'nickname' : '',
 				'name' : '',
-				'lastname' : '',
 				'corporate' : ''
 			}
         }
@@ -30,21 +30,21 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 
         	for(var i = 0; i < $scope.contacts.length ; i++)
 			{	
-				if ($scope.filter.name == undefined && $scope.filter.lastname == undefined && $scope.filter.corporate == undefined){
+				if ($scope.filter.nickname == undefined && $scope.filter.name == undefined && $scope.filter.company == undefined){
 					// no data in any input 
 					$scope.contactsFiltered = $scope.contacts;
 					return;
 				}else{
 					// validate its username like to name
-					if( $scope.contacts[i].username.indexOf($scope.filter.name) != -1){
+					if( $scope.contacts[i].username.indexOf($scope.filter.nickname) != -1){
 						$scope.contactsFiltered.push($scope.contacts[i]);
 					}else{
 						// validate if name lide to lastname
-						if( $scope.contacts[i].name.indexOf($scope.filter.lastname) != -1){
+						if( $scope.contacts[i].name.indexOf($scope.filter.name) != -1){
 							$scope.contactsFiltered.push($scope.contacts[i]);
 						}else{
 							// validate if company like corporate
-							if( $scope.contacts[i].company.name.indexOf($scope.filter.corporate) != -1){
+							if( $scope.contacts[i].company.name.indexOf($scope.filter.company) != -1){
 								$scope.contactsFiltered.push($scope.contacts[i]);
 							}
 						}
