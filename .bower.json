@@ -1,0 +1,17 @@
+{
+  "name": "proteo.ui.buscador-contacto",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "ignore": [],
+  "dependencies": {
+  },
+  "homepage": "https://github.com/rzazo131586/proteo.ui.buscador-contacto",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1"
+  },
+  "_source": "https://github.com/rzazo131586/proteo.ui.buscador-contacto.git",
+  "_target": "~0.0.1",
+  "_originalSource": "proteo.ui.proteo.ui.buscador-contacto"
+}
