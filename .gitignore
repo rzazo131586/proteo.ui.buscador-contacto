@@ -1,4 +1,5 @@
 # Folder Components
 # ========================
-node_modules
-.sass-cache
+node_modules/
+src/
+.sass-cache/
