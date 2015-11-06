@@ -16,12 +16,6 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
         $scope.contactReset = function(){
         	// reasign data into contactsFiltered for reset list contacts
 			$scope.contactsFiltered = $scope.contacts;
-			// clean inputs by ngModel Filter
-			$scope.filter = {
-				'username' 	: '',
-				'name' 		: '',
-				'company' : ''
-			}
         }
 
         // Validate if Inputs are empty && search into result service compare with filter
