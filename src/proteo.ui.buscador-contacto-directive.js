@@ -6,6 +6,7 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 		$scope.contactsFiltered = [];
 
 		// Init JSON-SERVER for consume REST Service JSON
+		// url JSON : /users.json
 		$http.get('http://localhost:3000/users').success(function(data) {
             $scope.contacts 		= data;
             $scope.contactsFiltered = data;
@@ -17,9 +18,9 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 			$scope.contactsFiltered = $scope.contacts;
 			// clean inputs by ngModel Filter
 			$scope.filter = {
-				'nickname' 	: '',
+				'username' 	: '',
 				'name' 		: '',
-				'corporate' : ''
+				'company' : ''
 			}
         }
 
@@ -36,8 +37,8 @@ angular.module("proteo.ui.buscador-contacto", []).controller("buscadorContactotC
 				}else{
 					// validate its username like to name
 					if( $scope.contacts[i].username.indexOf($scope.filter.username) != -1 || 
-						$scope.contacts[i].company.name.indexOf($scope.filter.company) != -1 ||
-						$scope.contacts[i].name.indexOf($scope.filter.name) != -1 ){
+						$scope.contacts[i].name.indexOf($scope.filter.name) != -1 ||
+						$scope.contacts[i].company.name.indexOf($scope.filter.company) != -1 ){
 							$scope.contactsFiltered.push($scope.contacts[i]);
 						}
 				}
