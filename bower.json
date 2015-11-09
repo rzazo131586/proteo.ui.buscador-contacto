@@ -2,7 +2,7 @@
   "name": "proteo.ui.buscador-contacto",
   "description": "proteo.ui.buscador-contacto",
   "version": "0.0.1",
-  "main": "./dist/index.js",
+  "main": "index.js",
   "ignore": [
   ],
   "dependencies": {
