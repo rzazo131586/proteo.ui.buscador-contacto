@@ -6,7 +6,9 @@ module.exports = function(grunt) {
   		  all: {
 		    src: [
 		    	'src/**/*-module.js',
+		    	'src/**/*-controller.js',
 		    	'src/**/*-directive.js',
+		    	'src/**/*-service.js',
 		    	'src/**/*-filter.js'
 		    ],
 		    dest: 'dist/proteo.ui.buscador-contacto.js',
