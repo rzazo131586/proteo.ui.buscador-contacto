@@ -1,0 +1,19 @@
+<div class="buscador-personas-container">
+	<div ng-repeat="contact in showContacts" class="col-md-12 ng-scope">
+		<div class="panel account-item">
+			<div class="item-body clearfix">
+				<div class="pull-left">
+					<div class="account-name ng-binding">
+						{{contact.name}}
+					</div>
+					<div class="account-holder ng-binding">{{contact.company.name}}</div>
+				</div>
+				<div class="pull-right text-right">
+					<div class="account-name ng-binding">
+						{{contact.username}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
