@@ -4,6 +4,20 @@
   "version": "0.0.1",
   "main": "index.js",
   "ignore": [
+    "bower_components",
+    "config",
+    "demo",
+    "doc",
+    "node_modules",
+    "reports",
+    "src",
+    "test",
+    "**/.*",
+    "gruntfile.js",
+    "package.json",
+    "sonar-project.properties",
+    "changelog.js",
+    "*.json"
   ],
   "dependencies": {
   },
