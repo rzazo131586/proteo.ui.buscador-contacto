@@ -6,9 +6,9 @@
   "ignore": [
   ],
   "dependencies": {
-    "proteo.ui.buscador-contacto.filtro" : "https://github.com/rzazo131586/proteo.ui.buscador-contacto.filtro.git",
-    "proteo.ui.buscador-contacto.visor"  : "https://github.com/rzazo131586/proteo.ui.buscador-contacto.visor.git"
   },
   "devDependencies": {
+    "proteo.ui.buscador-contacto.filtro" : "https://github.com/rzazo131586/proteo.ui.buscador-contacto.filtro.git",
+    "proteo.ui.buscador-contacto.visor"  : "https://github.com/rzazo131586/proteo.ui.buscador-contacto.visor.git"    
   }
 }
