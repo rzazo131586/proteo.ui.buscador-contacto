@@ -13,11 +13,12 @@
     "src",
     "test",
     "**/.*",
-    "gruntfile.js",
+    "GruntFile.js",
     "package.json",
     "sonar-project.properties",
     "changelog.js",
-    "*.json"
+    "*.json",
+    "*.rb"
   ],
   "dependencies": {
   },
