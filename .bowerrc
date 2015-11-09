@@ -1,0 +1,5 @@
+{
+    "registry"  :   "http://localhost:5678",
+    "directory" :   "src/components",
+    "timeout"   :   300000
+}

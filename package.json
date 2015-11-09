@@ -1,7 +1,7 @@
 {
   "name": "proteo.ui.buscador-contacto",
   "version": "0.0.1",
-  "description": "Filtro que implementa el Buscador de personas",
+  "description": "Componente Complejo que LLama a dos componentes diferentes",
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
