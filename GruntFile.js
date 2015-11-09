@@ -27,14 +27,22 @@ module.exports = function(grunt) {
 		  main: {
 		    files: [
 		      // includes files within path
-		      {
-		      	expand: true, 	
-		      	cwd: 'src/', 	// Path to wordk
-		      	src: [
+				{
+					expand: true, 	
+					cwd: 'src/', 	// Path to wordk
+					src: [
 					'*.html' 	// Type file to copy
-		      	], 
-		      	dest: 'dist/'	// Path to copy files
-		      }
+					], 
+					dest: 'dist/'	// Path to copy files
+				},
+				{
+			      	expand: true, 	
+			      	cwd: 'src/components', 	// Path to wordk
+			      	src: [
+						'**/*.*' 	// Type file to copy
+			      	], 
+			      	dest: 'dist/components'	// Path to copy files
+		     	}		      
 		    ]
 		  }
 		},
