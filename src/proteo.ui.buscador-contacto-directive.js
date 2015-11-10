@@ -6,7 +6,7 @@
 	  return {
 		restrict	: 	"E",
 	    controller 	: 	'buscadorContactoCtrl',
-	    templateUrl : 	'./bower_components/proteo.ui.buscador-contacto/dist/proteo.ui.buscador-contacto.tpl.html',
+	    templateUrl : 	'src/proteo.ui.buscador-contacto.tpl.html',
 	  };
 	});
 }());
