@@ -1,3 +1,4 @@
+/* Buscador-Contacto.FILTRO MODULE */
 (function () {
 
     'use strict';	
@@ -7,6 +8,9 @@
 			// custom code 
 	}]);
 }());
+/* END Buscador-Contacto.FILTRO MODULE */
+
+/* Buscador-Contacto.FILTRO CONTROLLER */
 (function () {
     'use strict';
 
@@ -51,7 +55,9 @@
 	});
 
 }());
+/* END Buscador-Contacto.FILTRO CONTROLLER */
 
+/* Buscador-Contacto.FILTRO DIRECTIVE */
 (function () {
     'use strict';
 
@@ -73,6 +79,9 @@
 	});
 
 }());
+/* END Buscador-Contacto.FILTRO DIRECTIVE */
+
+/* Buscador-Contacto.FILTRO SERVICE */
 (function () {
     'use strict';
 
@@ -88,7 +97,9 @@
 	  });
 
 }());
+/* END Buscador-Contacto.FILTRO SERVICE */
 
+/* Buscador-Contacto.VISOR MODULE */
 (function () {
 
     'use strict';	
@@ -98,6 +109,9 @@
 			// custom code 
 	}]);
 }());
+/* END Buscador-Contacto.VISOR MODULE */
+
+/* Buscador-Contacto.VISOR CONTROLLER */
 (function () {
     'use strict';
 
@@ -106,6 +120,9 @@
 	});
 
 }());
+/* END Buscador-Contacto.VISOR CONTROLLER */
+
+/* Buscador-Contacto.VISOR DIRECTIVE */
 
 (function () {
     'use strict';
@@ -122,6 +139,9 @@
 	});
 
 }());
+/* END Buscador-Contacto.VISOR DIRECTIVE */
+
+/* Buscador-Contacto.VISOR SERVICE */
 (function () {
     'use strict';
 
@@ -138,7 +158,7 @@
 	});
 
 }());
-
+/* END Buscador-Contacto.VISOR SERVICE */
 /* Buscador-Contacto Controller */
 (function () {
     'use strict';
@@ -175,7 +195,9 @@
 }());
 /* END Buscador-Contacto Directive */
 
-/* Todo Filter */
+/* Buscador-Contacto Filter */
+/* END Buscador-Contacto Filter */
+
 /* Buscador-Contacto Module */
 (function () {
 
