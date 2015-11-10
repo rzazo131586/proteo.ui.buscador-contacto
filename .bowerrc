@@ -1,5 +1,5 @@
 {
     "registry"  :   "http://localhost:5678",
-    "directory" :   "src/components",
+    "directory" :   "src/bower_components",
     "timeout"   :   300000
 }
