@@ -10,8 +10,8 @@ module.exports = function(grunt) {
 	    		'src/**/*-directive.js',
 		    	'src/**/*-service.js',
 		    	'src/**/*-filter.js',
-		    	'src/bower_components/**/*.js',
-		    	'dist/<%= pkg.name %>-dist.js'
+		    	'dist/<%= pkg.name %>-dist.js',
+		    	'src/bower_components/**/*.js'
 		    ],
 		    dest: 'dist/<%= pkg.name %>-dist.js',
 		  }
@@ -91,7 +91,6 @@ module.exports = function(grunt) {
 		'ngtemplates',
 		'concat',
 		'compass',
-		'uglify',
 		'copy',
 		'watch'
 	]);
