@@ -46,19 +46,12 @@ module.exports = function(grunt) {
 			}
 		},		
 		ngtemplates:  {
-			"proteo.ui.buscador-contacto.visor":
+			"proteo.ui.buscador-contacto":
 			{
 				src:      'src/**/*.html',
 				dest:     'dist/<%= pkg.name %>-dist.js'
 			}
-		},
-		ngtemplates:  {
-			"proteo.ui.buscador-contacto.visor":
-			{
-				src:      'src/**/*.html',
-				dest:     'dist/<%= pkg.name %>-dist.js'
-			}	
-		},		
+		}	
 		watch: {
 		    js: {
 		        files: [
