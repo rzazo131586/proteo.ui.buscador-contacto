@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 				src:      'src/**/*.html',
 				dest:     'dist/<%= pkg.name %>-dist.js'
 			}
-		}	
+		},	
 		watch: {
 		    js: {
 		        files: [
