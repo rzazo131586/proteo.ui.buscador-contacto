@@ -4,3 +4,4 @@ node_modules/
 src/
 .sass-cache/
 test/
+bower_components/
