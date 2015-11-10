@@ -5,12 +5,12 @@ module.exports = function(grunt) {
 		concat: {
   		  all: {
 		    src: [
-		    	//'src/**/*-module.js',
-		    	//'src/**/*-controller.js',
-		    	//'src/**/*-directive.js',
-		    	//'src/**/*-service.js',
-		    	//'src/**/*-filter.js'
-		    	'src/**/*.js'
+		    	'src/**/*-module.js',
+		    	'src/**/*-controller.js',
+	    		'src/**/*-directive.js',
+		    	'src/**/*-service.js',
+		    	'src/**/*-filter.js',
+		    	'src/bower_components/**/*.js'
 		    ],
 		    dest: 'dist/proteo.ui.buscador-contacto.js',
 		  }
