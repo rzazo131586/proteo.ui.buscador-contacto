@@ -91,6 +91,7 @@ module.exports = function(grunt) {
 		'ngtemplates',
 		'concat',
 		'compass',
+		'uglify',
 		'copy',
 		'watch'
 	]);
