@@ -5,10 +5,10 @@
   "main": "dist/index.js",
   "ignore": [
     "*",
-    "!dist/",
-    "!bower.json",
+    "!dist/**/",
+    "!dist/*",
     "!.bower.json",
-    "!READEM.*"
+    "!README.*"
   ],
   "dependencies": {
 
