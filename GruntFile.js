@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 		compass: {                  		// Task
 			dist: {                  	 	// Target
 				options: {              	// Target options
-					config: 'config.rb'
+					config: 'compass_config.rb'
 				}
 			}
 		},
