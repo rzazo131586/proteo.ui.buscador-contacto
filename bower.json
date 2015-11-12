@@ -10,9 +10,9 @@
     "doc",
     "node_modules",
     "reports",
-    "styles",
-    "resources",
     "src",
+    "./styles/",
+    "./resources/",
     "test",
     "**/.*",
     "GruntFile.js",
@@ -23,9 +23,9 @@
     "*.rb"
   ],
   "dependencies": {
-  },
-  "devDependencies": {
     "proteo.ui.buscador-contacto.filtro" : "https://github.com/rzazo131586/proteo.ui.buscador-contacto.filtro.git",
     "proteo.ui.buscador-contacto.visor"  : "https://github.com/rzazo131586/proteo.ui.buscador-contacto.visor.git"    
+  },
+  "devDependencies": {
   }
 }
