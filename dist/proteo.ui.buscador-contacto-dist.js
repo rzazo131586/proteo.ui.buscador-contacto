@@ -14,11 +14,12 @@
 (function () {
     'use strict';
 
-	angular.module('proteo.ui.buscador-contacto').controller('buscadorContactoCtrl', function($scope, $http, $buscadorContactoService) {
+	angular.module('proteo.ui.buscador-contacto').controller('buscadorContactoCtrl', function($scope, $http, buscadorContactoService) {
 		// Code fo Controller
 		/*            $scope.contacstList ={};*/
         $scope.filterParam = {
-            'name' : 'John Doe'
+            'name' : 'John',
+            'lastname' : "Dow"
         }
 
         $scope.getFilterName = function (){
@@ -26,12 +27,12 @@
         };
         console.log("GetFilterName >> "+$scope.getFilterName());
 
-            $scope.contactsToSearch = function(valueDirective){
-                //console.log("ValueDirective >> "+JSON.stringify(valueDirective));
-                $scope.contacstList = valueDirective;
-                $scope.contacstToShow = $scope.contacstList;
-                //console.log("$scope.contacstToShow >> "+JSON.stringify($scope.contacstList));
-            };
+        $scope.contactsToSearch = function(valueDirective){
+            //console.log("ValueDirective >> "+JSON.stringify(valueDirective));
+            $scope.contacstList = valueDirective;
+            $scope.contacstToShow = $scope.contacstList;
+            //console.log("$scope.contacstToShow >> "+JSON.stringify($scope.contacstList));
+        };
             
 /*            $scope.$watch('contacstList', function(){
                 $scope.contacstToShow = $scope.contacstList;
@@ -58,17 +59,48 @@
 (function () {
     'use strict';
 
-angular.module('proteo.ui.buscador-contacto').service('buscadorContactoService', function () {
-      this.getFilterParams = function(filter){return filter.name;};
-  });
+	angular.module('proteo.ui.buscador-contacto').service('buscadorContactoService', function () {
+		//Receive JSON with items of filter
+		this.getFilterParams = function(filter){
+			return filter.name;
+		};
+	});
 
 }());
-
 /* Buscador-Contacto Filter */
 /* END Buscador-Contacto Filter */
 
 angular.module('proteo.ui.buscador-contacto').run(['$templateCache', function($templateCache) {
   'use strict';
+
+  $templateCache.put('src/index.html',
+    "<!DOCTYPE html>\r" +
+    "\n" +
+    "<html>\r" +
+    "\n" +
+    "<head>\r" +
+    "\n" +
+    "\t<meta charset=\"utf-8\">\r" +
+    "\n" +
+    "\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r" +
+    "\n" +
+    "\t<link rel=\"stylesheet\" href=\"bower_components/proteo.ui.buscador-contacto.filtro-dist.js\">\r" +
+    "\n" +
+    "\t<link rel=\"stylesheet\" href=\"bower_components/proteo.ui.buscador-contacto.visor-dist.js\">\r" +
+    "\n" +
+    "</head>\r" +
+    "\n" +
+    "<body ng-controller=\"buscadorContactoCtrl\">\r" +
+    "\n" +
+    "\t<buscador-Contacto.filtro contacts-result=\"contactsToSearch\"></buscador-Contacto.filtro>\r" +
+    "\n" +
+    "\t<buscador-Contacto.visor show-contacts=\"contacstToShow\"></buscador-Contacto.visor>\t\r" +
+    "\n" +
+    "</body>\r" +
+    "\n" +
+    "</html>"
+  );
+
 
   $templateCache.put('src/proteo.ui.buscador-contacto.tpl.html',
     "<div class=\"buscador-personas-container\">\r" +
