@@ -14,9 +14,18 @@
 (function () {
     'use strict';
 
-	angular.module('proteo.ui.buscador-contacto').controller('buscadorContactoCtrl', function($scope, $http) {
+	angular.module('proteo.ui.buscador-contacto').controller('buscadorContactoCtrl', function($scope, $http, $buscadorContactoService) {
 		// Code fo Controller
 		/*            $scope.contacstList ={};*/
+        $scope.filterParam = {
+            'name' : 'John Doe'
+        }
+
+        $scope.getFilterName = function (){
+            return "Name : " + buscadorContactoService.getFilterParams($scope.filterParam);
+        };
+        console.log("GetFilterName >> "+$scope.getFilterName());
+
             $scope.contactsToSearch = function(valueDirective){
                 //console.log("ValueDirective >> "+JSON.stringify(valueDirective));
                 $scope.contacstList = valueDirective;
@@ -45,6 +54,15 @@
 	});
 }());
 /* END Buscador-Contacto Directive */
+
+(function () {
+    'use strict';
+
+angular.module('proteo.ui.buscador-contacto').service('buscadorContactoService', function () {
+      this.getFilterParams = function(filter){return filter.name;};
+  });
+
+}());
 
 /* Buscador-Contacto Filter */
 /* END Buscador-Contacto Filter */
