@@ -1,7 +1,4 @@
 /* Buscador-Contacto Directive */
-(function () {
-    'use strict';
-
 	angular.module('proteo.ui.buscador-contacto').directive('buscadorContacto',function() {
 	  return {
 		restrict	: 	"E",
@@ -9,5 +6,4 @@
 	    templateUrl : 	'src/proteo.ui.buscador-contacto.tpl.html',
 	  };
 	});
-}());
 /* END Buscador-Contacto Directive */
