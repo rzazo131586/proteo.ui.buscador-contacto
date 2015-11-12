@@ -1,8 +1,6 @@
 http_path = "/"
-css_dir = "src"
+css_dir = "dist/css"
 sass_dir = "src"
-images_dir = "src"
-javascripts_dir = "src"
 relative_assets = true
 #only for development:
 output_style = :expanded
