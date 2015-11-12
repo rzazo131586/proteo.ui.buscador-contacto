@@ -4,26 +4,11 @@
   "version": "0.0.1",
   "main": "dist/index.js",
   "ignore": [
-    "src",
-    "test",
-    "styles",
-    "node_modules",
-    "bower_components",
-    "config",
-    "demo",
-    "doc",
-    "reports",
-    "./styles/*.css",
-    "./resources/**/*.json",
-    "./images/**/*.png",
-    "./images/**/*.jpg",
-    "**/.*",
-    "GruntFile.js",
-    "package.json",
-    "sonar-project.properties",
-    "changelog.js",
-    "users.json",
-    "*.rb"
+    "*",
+    "!dist/",
+    "!bower.json",
+    "!.bower.json",
+    "!READEM.*"
   ],
   "dependencies": {
 
