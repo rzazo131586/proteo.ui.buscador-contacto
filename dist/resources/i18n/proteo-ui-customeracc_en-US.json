@@ -1,0 +1,10 @@
+{
+ "ACCOUNT": "Account:",
+ "NAME": "Name:",
+ "PHONE": "Phone:",
+ "CUSTOMER":"Customer",
+ "APPTITLE": "Update Account",
+ "CP":"ZIP Code:",
+ "CITY":"City:",
+ "SAVE": "OK"
+}
