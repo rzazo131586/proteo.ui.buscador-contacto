@@ -19,9 +19,7 @@ module.exports = function(grunt) {
 		compass: {                  		// Task
 			dist: {                  	 	// Target
 				options: {              	// Target options
-					sassDir: 'src',
-					cssDir: 'styles',
-					environment: 'production'
+					config: 'config.rb'
 				}
 			}
 		},
@@ -39,7 +37,7 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true, 
-						src: ['styles/*.*'], 
+						src: ['images/**'], 
 						dest: 'dist'
 					}
 				]
@@ -77,30 +75,33 @@ module.exports = function(grunt) {
 				src: 'src/*.js',
 				dest: 'dist/<%= pkg.name %>-dist.min.js'
 			},
-	    }
+	    },
+		clean: ["dist"]
 	});
 
   	grunt.loadNpmTasks('grunt-angular-templates');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-compass');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', [
+		'clean',
 		'ngtemplates',
 		'concat',
 		'compass',
-		'uglify',
 		'copy',
+		'uglify',
 		'watch'
 	]);
 	grunt.registerTask('dist', [
-		'concat',
 		'ngtemplates',
+		'concat',
 		'compass',
-		'uglify',
 		'copy',
+		'uglify',
 		'watch'
 	]);
 };
