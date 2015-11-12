@@ -11,14 +11,14 @@
     "node_modules",
     "reports",
     "src",
-    "styles",
+    "./styles",
     "test",
     "**/.*",
     "GruntFile.js",
     "package.json",
     "sonar-project.properties",
     "changelog.js",
-    "*.json",
+    "./*.json",
     "*.rb"
   ],
   "dependencies": {
