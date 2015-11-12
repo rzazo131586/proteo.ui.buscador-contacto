@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "main": "dist/index.js",
   "ignore": [
-    "*",
-    "!dist/**/",
+    "!dist/**/*",
     "!dist/*",
     "!.bower.json",
+    "!bower.json",
     "!README.*"
   ],
   "dependencies": {
