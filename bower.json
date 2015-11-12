@@ -14,7 +14,7 @@
     "doc",
     "reports",
     "./styles/*.css",
-    "./resources/**/*.*"
+    "./resources/**/*.*",
     "**/.*",
     "GruntFile.js",
     "package.json",
