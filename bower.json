@@ -13,6 +13,8 @@
     "demo",
     "doc",
     "reports",
+    "./styles/*.css",
+    "./resources/**/*.*"
     "**/.*",
     "GruntFile.js",
     "package.json",
