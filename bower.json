@@ -6,7 +6,6 @@
   "ignore": [
     "src",
     "test",
-    "resources",
     "styles",
     "node_modules",
     "bower_components",
