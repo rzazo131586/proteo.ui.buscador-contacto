@@ -1,5 +1,5 @@
 http_path = "/"
-css_dir = "dist/css"
+css_dir = "dist/styles/css"
 sass_dir = "src"
 relative_assets = true
 #only for development:

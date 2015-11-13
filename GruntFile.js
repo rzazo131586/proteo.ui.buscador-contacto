@@ -37,8 +37,8 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true, 
-						src: ['images/**/*','src/**/images/**/*'], 
-						dest: 'dist/images',
+						src: ['styles/images/**/*','src/**/styles/images/**/*'], 
+						dest: 'dist/styles/images',
 						flatten : true
 					}
 				]
@@ -57,22 +57,12 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true, 
-						src: ['src/**/css/**/*'], 
-						dest: 'dist/css',
+						src: ['src/**/styles/css/**/*'], 
+						dest: 'dist/styles/css',
 						flatten : true
 					}
 				]
-			},
-			img_components: {
-				files: [
-					{
-						expand: true, 
-						src: ['src/**/images/**/*'], 
-						dest: 'dist/images',
-						flatten : true
-					}
-				]
-			}						
+			}					
 		},		
 		ngtemplates:  {
 			"proteo.ui.buscador-contacto":
