@@ -190,7 +190,6 @@ angular.module('proteo.ui.buscador-contacto').run(['$templateCache', function($t
 
 }]);
 
-angular.module("proteo.ui.buscador-contacto.filtro").controller("buscadorContactoFiltroCtrl",function(a,b){a.filter={},a.datatitle="AGENDA DE CONTACTOS",b.get("http://localhost:3000/users").success(function(b){a.contacts=b,a.contactsFiltered=b}),a.contactReset=function(){a.contactsFiltered=void 0},a.contactFilteredFn=function(){a.contactsFiltered=[];for(var b=0;b<a.contacts.length;b++){if(void 0==a.filter.username&&void 0==a.filter.name&&void 0==a.filter.company)return void a.contactReset();(-1!=a.contacts[b].username.indexOf(a.filter.username)||-1!=a.contacts[b].name.indexOf(a.filter.name)||-1!=a.contacts[b].company.name.indexOf(a.filter.company))&&a.contactsFiltered.push(a.contacts[b])}return a.contactsFiltered}}),angular.module("proteo.ui.buscador-contacto.filtro").directive("buscadorContacto.filtro",function(){return{scope:{contactsResult:"="},restrict:"E",controller:"buscadorContactoFiltroCtrl",templateUrl:"src/proteo.ui.buscador-contacto.filtro.tpl.html",link:function(a){a.returnItemsFilter=function(){a.contactsResult(a.contactFilteredFn())}}}}),angular.module("proteo.ui.buscador-contacto.filtro",["pascalprecht.translate"]).config(["$translateProvider",function(a){}]),angular.module("proteo.ui.buscador-contacto.filtro").service("filtroService",function(){});
 /* Buscador-Contacto.VISOR MODULE */
 	angular.module('proteo.ui.buscador-contacto.visor',['pascalprecht.translate'])
 		.config(['$translateProvider', function ($translateProvider) {
@@ -266,5 +265,3 @@ angular.module('proteo.ui.buscador-contacto').run(['$templateCache', function($t
   );
 
 }]);
-
-angular.module("proteo.ui.buscador-contacto.visor").controller("buscadorContactoVisorCtrl",function(a,b){console.log("buscadorContactoVisorCtrl")}),angular.module("proteo.ui.buscador-contacto.visor").directive("buscadorContacto.visor",function(){return{restrict:"E",scope:{showContacts:"="},controller:"buscadorContactoVisorCtrl",templateUrl:"src/proteo.ui.buscador-contacto.visor.tpl.html"}}),angular.module("proteo.ui.buscador-contacto.visor",["pascalprecht.translate"]).config(["$translateProvider",function(a){}]),angular.module("proteo.ui.buscador-contacto.visor").service("visorService",function(){});

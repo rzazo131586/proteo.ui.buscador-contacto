@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 		    	'src/**/*-service.js',
 		    	'src/**/*-filter.js',
 		    	'dist/<%= pkg.name %>-dist.js',
-		    	'src/bower_components/**/*.js'
+		    	'src/bower_components/**/*-dist.js'
 		    ],
 		    dest: 'dist/<%= pkg.name %>-dist.js',
 		  }
