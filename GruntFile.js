@@ -24,11 +24,11 @@ module.exports = function(grunt) {
 			}
 		},
 		copy: {
-			res: {
+			resources: {
 				files: [
 					{
 						expand: true, 
-						src: ['resources/**'], 
+						src: ['resources/**/*'], 
 						dest: 'dist'
 					}
 				]
@@ -37,11 +37,42 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true, 
-						src: ['images/**'], 
-						dest: 'dist'
+						src: ['images/**/*','src/**/images/**/*'], 
+						dest: 'dist/images',
+						flatten : true
 					}
 				]
-			}
+			},
+			i18n_components :{
+				files : [
+					{
+						expand : true,
+						src : ['src/bower_components/**/resources/i18n/*'],
+						dest: 'dist/resources/i18n',
+						flatten : true
+					}
+				]
+			},
+			css_components: {
+				files: [
+					{
+						expand: true, 
+						src: ['src/**/css/**/*'], 
+						dest: 'dist/css',
+						flatten : true
+					}
+				]
+			},
+			img_components: {
+				files: [
+					{
+						expand: true, 
+						src: ['src/**/images/**/*'], 
+						dest: 'dist/images',
+						flatten : true
+					}
+				]
+			}						
 		},		
 		ngtemplates:  {
 			"proteo.ui.buscador-contacto":
