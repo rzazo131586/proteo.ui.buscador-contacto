@@ -1,0 +1,28 @@
+{
+  "name": "proteo.ui.buscador-contacto.filtro",
+  "description": "proteo.ui.buscador-contacto.filtro",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "ignore": [
+    "bower_components",
+    "styles",
+    "config",
+    "demo",
+    "doc",
+    "node_modules",
+    "reports",
+    "src",
+    "test",
+    "**/.*",
+    "GruntFile.js",
+    "package.json",
+    "sonar-project.properties",
+    "changelog.js",
+    "*.json",
+    "*.rb"  
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

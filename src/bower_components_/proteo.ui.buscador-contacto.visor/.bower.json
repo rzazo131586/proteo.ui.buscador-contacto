@@ -1,0 +1,35 @@
+{
+  "name": "proteo.ui.buscador-contacto.visor",
+  "description": "proteo.ui.buscador-contacto.visor",
+  "main": "./dist/index.js",
+  "ignore": [
+    "bower_components",
+    "config",
+    "demo",
+    "styles",
+    "doc",
+    "node_modules",
+    "reports",
+    "src",
+    "test",
+    "**/.*",
+    "GruntFile.js",
+    "package.json",
+    "sonar-project.properties",
+    "changelog.js",
+    "*.json",
+    "*.rb"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "homepage": "https://github.com/rzazo131586/proteo.ui.buscador-contacto.visor",
+  "_release": "eb437b273e",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "eb437b273e01206db4adca19aa3028fac9a11838"
+  },
+  "_source": "https://github.com/rzazo131586/proteo.ui.buscador-contacto.visor.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/rzazo131586/proteo.ui.buscador-contacto.visor.git"
+}
