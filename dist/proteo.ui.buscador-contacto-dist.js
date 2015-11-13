@@ -47,8 +47,6 @@ angular.module('proteo.ui.buscador-contacto').run(['$templateCache', function($t
   $templateCache.put('src/proteo.ui.buscador-contacto.tpl.html',
     "<div class=\"buscador-personas-container\">\r" +
     "\n" +
-    "\tTODO : LLamando a dos directivas (two bower components)\r" +
-    "\n" +
     "\t<buscador-Contacto.filtro contacts-result=\"contactsToSearch\"></buscador-Contacto.filtro>\r" +
     "\n" +
     "\t<buscador-Contacto.visor show-contacts=\"contacstToShow\"></buscador-Contacto.visor>\t\r" +
