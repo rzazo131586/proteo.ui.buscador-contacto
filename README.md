@@ -1,2 +1,6 @@
-# proteo.ui.filter-contact
-Proteo | Filtro para realizacion de busquedas | Admite parametro de busqueda [JSon]
+# proteo.ui.buscador-contacto
+Componente visual > Buscador de contactos
+
+Dependencia de componentes incluidos 
+- 	proteo.ui.buscador-contacto.filtro 
+- 	proteo.ui.buscador-contacto.visor 
