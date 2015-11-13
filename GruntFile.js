@@ -14,6 +14,12 @@ module.exports = function(grunt) {
 		    	'src/bower_components/**/*-dist.js'
 		    ],
 		    dest: 'dist/<%= pkg.name %>-dist.js',
+		  },
+		  all_css : {
+		  	src : [
+		  		'src/bower_components/**/*.css'
+		  	],
+		  	dest : 'dist/styles/css/<%= pkg.name %>.css',
 		  }
 		},
 		compass: {                  		// Task
@@ -49,16 +55,6 @@ module.exports = function(grunt) {
 						expand : true,
 						src : ['src/bower_components/**/resources/i18n/*'],
 						dest: 'dist/resources/i18n',
-						flatten : true
-					}
-				]
-			},
-			css_components: {
-				files: [
-					{
-						expand: true, 
-						src: ['src/**/styles/css/**/*'], 
-						dest: 'dist/styles/css',
 						flatten : true
 					}
 				]
