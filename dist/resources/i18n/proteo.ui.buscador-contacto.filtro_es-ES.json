@@ -1,10 +1,7 @@
 {
- "ACCOUNT": "Cuenta:",
- "NAME": "Nombre:",
- "PHONE": "Telefono:",
- "CUSTOMER":"Cliente",
- "APPTITLE": "Actualizar Cuenta",
- "CP":"Codigo Postal:",
- "CITY":"Ciudad:",
- "SAVE": "OK"
+ "USER_NAME": "Nombre de usuario :",
+ "USER_LASTNAME": "Apellidos :",
+ "USER_COMPANY": "Compañia :",
+ "BTN_SEARCH":"BUSCAR",
+ "BTN_RESET": "RESET"
 }

@@ -149,7 +149,7 @@ angular.module('proteo.ui.buscador-contacto').run(['$templateCache', function($t
     "\n" +
     "\t\t<div class=\"col-md-6\">\r" +
     "\n" +
-    "\t\t\t<label class=\"control-label ng-scope\">Username</label>\r" +
+    "\t\t\t<label class=\"control-label ng-scope\" translate>USER_NAME</label>\r" +
     "\n" +
     "\t        <input class=\"form-control ng-pristine ng-untouched ng-valid ng-scope\" type=\"text\" name=\"username\" ng-model=\"filter.username\">\t\t\t\r" +
     "\n" +
@@ -157,7 +157,7 @@ angular.module('proteo.ui.buscador-contacto').run(['$templateCache', function($t
     "\n" +
     "\t\t<div class=\"col-md-6\">\r" +
     "\n" +
-    "\t\t\t<label class=\"control-label ng-scope\">Name Lastname</label>\r" +
+    "\t\t\t<label class=\"control-label ng-scope\" translate>USER_LASTNAME</label>\r" +
     "\n" +
     "\t        <input class=\"form-control ng-pristine ng-untouched ng-valid ng-scope\" type=\"text\" name=\"name\" ng-model=\"filter.name\" required>\r" +
     "\n" +
@@ -165,7 +165,7 @@ angular.module('proteo.ui.buscador-contacto').run(['$templateCache', function($t
     "\n" +
     "\t\t<div class=\"col-md-6\">\r" +
     "\n" +
-    "\t\t\t<label class=\"control-label ng-scope\">Company</label>\r" +
+    "\t\t\t<label class=\"control-label ng-scope\" translate>USER_COMPANY</label>\r" +
     "\n" +
     "\t        <input class=\"form-control ng-pristine ng-untouched ng-valid ng-scope\" type=\"text\" name=\"company\" ng-model=\"filter.company\" required>\r" +
     "\n" +
@@ -175,9 +175,9 @@ angular.module('proteo.ui.buscador-contacto').run(['$templateCache', function($t
     "\n" +
     "\t\t<div class=\"col-md-6 text-right\">\r" +
     "\n" +
-    "\t\t\t<button type=\"button\" class=\"btn btn-action\" ng-click=\"returnItemsFilter()\">Buscar</button>\r" +
+    "\t\t\t<button type=\"button\" class=\"btn btn-action\" ng-click=\"returnItemsFilter()\" translate>BTN_SEARCH</button>\r" +
     "\n" +
-    "\t\t\t<button type=\"button\" class=\"btn btn-action\" ng-click=\"contactReset()\">Reset</button>\r" +
+    "\t\t\t<button type=\"button\" class=\"btn btn-action\" ng-click=\"contactReset()\" translate>BTN_RESET</button>\r" +
     "\n" +
     "\t\t</div>\r" +
     "\n" +

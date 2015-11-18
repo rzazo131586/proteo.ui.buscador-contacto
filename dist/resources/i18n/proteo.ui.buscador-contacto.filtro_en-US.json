@@ -1,10 +1,7 @@
 {
- "ACCOUNT": "Account:",
- "NAME": "Name:",
- "PHONE": "Phone:",
- "CUSTOMER":"Customer",
- "APPTITLE": "Update Account",
- "CP":"ZIP Code:",
- "CITY":"City:",
- "SAVE": "OK"
+ "USER_NAME": "Name :",
+ "USER_LASTNAME": "Lastname :",
+ "USER_COMPANY": "Company :",
+ "BTN_SEARCH":"SEARCH",
+ "BTN_RESET": "RESET"
 }
